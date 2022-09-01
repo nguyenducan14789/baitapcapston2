@@ -132,3 +132,84 @@
   left: 363px;
   top: 16px;
 }
+
+.carousel .container {
+  background-image: url(../../img/image\ 6.png);
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+  height: 530px;
+}
+.carousel .container .img1 {
+  position: absolute;
+  width: 821px;
+  height: 392px;
+  left: 86px;
+  top: 5px;
+}
+.carousel .container .img2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 597px;
+  top: 397px;
+}
+.carousel .container .img3 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 635px;
+  top: 397px;
+}
+.carousel .container .img4 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 667px;
+  top: 397px;
+}
+.carousel .container .img5 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 45.71px;
+  height: 66.13px;
+  right: 18px;
+  top: 175px;
+}
+.carousel .container .img6 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 45.71px;
+  height: 66.13px;
+  left: 18px;
+  top: 175px;
+}
+.carousel .container h1 {
+  position: absolute;
+  width: 291px;
+  height: 51px;
+  left: 930px;
+  top: 124px;
+  line-height: 48px;
+}
+.carousel .container p {
+  position: absolute;
+  width: 291px;
+  height: 51px;
+  left: 930px;
+  top: 175px;
+  line-height: 24px;
+}
+.carousel .container button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 930px;
+  top: 225px;
+  background-color: #F8B653;
+  border: none;
+}
