@@ -28,7 +28,10 @@ $text-c3-dark: #1e1d1d;
 $text-c1-light: #ffffff;
 $text-c2-light: #cbc9c9;
 $text-c3-light: #f6f6f6;
+$text-c4-light: #fffcfc;
+$text-c5-light: #fff8f8;
 $text-c1-red: #fc0303;
+$text-c1-green: #1ed90e;
 
 $bg-c1-dark: #000000;
 $bg-c1-light: #cccccc;
@@ -78,7 +81,7 @@ $bg-c2-orange: #e1b067;
   .container {
     a {
       position: relative;
-	  display: inline-block;
+      display: inline-block;
       text-decoration: none;
       margin: 16px 24px 10px 0;
       @include text($text-light, $text-2xl, $text-c1-dark);
@@ -89,29 +92,103 @@ $bg-c2-orange: #e1b067;
         right: 0;
         margin: auto;
         background-color: $bg-c1-dark;
-		font-weight: $text-regular;
+        font-weight: $text-regular;
         width: 0%;
         content: "";
         height: 1px;
       }
-	  &:hover::after{
-		width: 100%;
-	  }
+      &:hover::after {
+        width: 100%;
+      }
     }
-	.active{
-		@include text($text-regular, $text-2xl, $text-c1-dark);
-		&:after {
-			position: absolute;
-			bottom: -5px;
-			left: 0;
-			right: 0;
-			margin: auto;
-			font-weight: $text-regular;
-			background-color: $bg-c1-dark;
-			width: 100%;
-			content: "";
-			height: 1px;
-		  }
-	}
+    .active {
+      @include text($text-regular, $text-2xl, $text-c1-dark);
+      &:after {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-weight: $text-regular;
+        background-color: $bg-c1-dark;
+        width: 100%;
+        content: "";
+        height: 1px;
+      }
+    }
+  }
+}
+
+.product {
+  .container {
+    display: flex;
+    margin: 58px 45px 39px 45px;
+    .item {
+      flex: 30%;
+      height: 355px;
+      background-color: $bg-c2-light;
+      position: relative;
+      margin-right: 128px;
+      img {
+        background-color: $bg-c2-light;
+        width: 220px;
+        height: 156px;
+        position: absolute;
+        left: 57px;
+        top: 109px;
+      }
+    }
+    .detail {
+      flex: 70%;
+      h1 {
+        @include text($text-light, $text-3xl, $text-c1-dark);
+      }
+      p {
+        @include text($text-regular, $text-base, $text-c2-dark);
+      }
+      h2 {
+        @include text($text-medium, $text-24xl, $text-c1-green);
+      }
+      .productSize {
+        button {
+          @include text($text-semibold, $text-24xl, $text-c3-dark);
+          padding: 11px 8px 10px 10px;
+          background-color: $bg-c1-light;
+          margin-right: 21px;
+          border-radius: 0;
+          border: none;
+          margin-bottom: 17px;
+        }
+      }
+      h4 {
+        @include text($text-semibold, $text-3xl, $text-c1-red);
+        width: 113px;
+        height: 47px;
+        padding-bottom: 6px;
+      }
+      .productAmount {
+        button {
+          @include text($text-regular, $text-3xl, $text-c4-light);
+          padding: 6px 17px 12px 15px;
+          border-radius: 0px;
+          border: none;
+          background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+          margin-right: 20px;
+        }
+        span {
+          @include text($text-regular, $text-3xl, $text-c1-dark);
+          margin-right: 25px;
+        }
+		
+      }
+      a {
+		margin-top: 100px;
+        @include text($text-medium, $text-24xl, $text-c5-light);
+        width: 175px;
+        height: 64px;
+		padding: 18px 9px 18px 24px;
+		background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+      }
+    }
   }
 }
