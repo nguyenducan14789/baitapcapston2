@@ -1,0 +1,19 @@
+@mixin text($fz: $text-base, $fw: $text-regular, $c: $text-c1-dark) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+};
+
+@mixin btn($fz, $fw, $c, $bg, $pd,$bd , $br, $c-hover, $bg-hover) {
+    @include text($fz, $fw , $c );
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    cursor: pointer;
+
+    &:hover {
+        color: $c-hover;
+        background: $bg-hover;
+    }
+};
