@@ -31,17 +31,21 @@ function renderProduct(arr){
         let product = arr[i];
         
         html += `
-        <div class="item item-${product.id}">
+        <div class="item item${product.id}">
             <div class="item-img">
                 <img src="${product.image}" alt="">
             </div>
             <div class="item-info">
              <h1 class="name">${product.name}</h1>
-                <p class="description">short</p>
+                <p class="description">short Descript...</p>
             </div>
             <div class="item-btn">
-                <div class="buy">Buy now</div>
-                <div class="price">${product.price}</div>
+                <div class="buy">
+                    <button>Buy now</button>
+                </div>
+                <div class="price">
+                    <p>${product.price}$</p>
+                </div>
             </div>
         </div>
         `
