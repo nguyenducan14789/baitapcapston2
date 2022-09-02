@@ -213,3 +213,15 @@
   background-color: #F8B653;
   border: none;
 }
+
+.product .container .product-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product .container .product-item .item {
+  width: 33%;
+}
+.product .container .product-item .item img {
+  width: 220px;
+  height: 156px;
+}

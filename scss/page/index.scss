@@ -246,3 +246,20 @@
         }
     }
 }
+
+.product{
+    .container{
+        h1{}
+        .product-item{
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                width: 33%;
+                img{
+                    width: 220px;
+                    height: 156px;
+                }
+            }
+        }
+    }
+}
