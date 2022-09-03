@@ -41,7 +41,7 @@ function renderProduct(arr){
             </div>
             <div class="item-btn">
                 <div class="buy">
-                    <button>Buy now</button>
+                    <a href="../../detail.html?id=${product.id}">Buy now</a>
                 </div>
                 <div class="price">
                     <p>${product.price}$</p>

@@ -255,13 +255,15 @@ $bg-c2-orange: #e1b067;
                 display: flex;
                 vertical-align: middle;
                 text-align: center;
-                button {
+                a {
                   width: 175px;
                   height: 64px;
                   @include text($text-exlight, $text-24xl, $text-c1-dark);
                   background-color: $bg-c2-orange;
                   border-radius: 0px;
                   border: none;
+                  line-height: 64px;
+                  text-decoration: none;
                 }
                 p {
                   width: 160px;

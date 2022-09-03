@@ -233,7 +233,7 @@
   vertical-align: middle;
   text-align: center;
 }
-.product .container .items .row .col .card .cardBody .price button {
+.product .container .items .row .col .card .cardBody .price a {
   width: 175px;
   height: 64px;
   font-weight: 200;
@@ -242,6 +242,8 @@
   background-color: #e1b067;
   border-radius: 0px;
   border: none;
+  line-height: 64px;
+  text-decoration: none;
 }
 .product .container .items .row .col .card .cardBody .price p {
   width: 160px;
