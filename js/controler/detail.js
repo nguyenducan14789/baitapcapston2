@@ -89,7 +89,7 @@ function renderProduct(arr){
 
 window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const myParam = urlParams.get('id');
+    const myParam = urlParams.get('productid');
 	getProductDetail(myParam);
 	getDataProducts();
 

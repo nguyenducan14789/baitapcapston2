@@ -195,7 +195,7 @@
   margin: 0;
   border: none;
   margin-right: 60px;
-  margin-bottom: 47px;
+  margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 334px;
@@ -222,11 +222,12 @@
   margin-bottom: 8px;
 }
 .product .container .items .row .col .card .cardBody p {
+  width: 334px;
   font-weight: 300;
   font-size: 18px;
   color: #cbc9c9;
-  margin-left: 23px;
-  margin-bottom: 13px;
+  padding-left: 23px;
+  padding-bottom: 13px;
 }
 .product .container .items .row .col .card .cardBody .price {
   display: flex;

@@ -222,7 +222,7 @@ $bg-c2-orange: #e1b067;
           margin: 0;
           border: none;
           margin-right: 60px;
-          margin-bottom: 47px;
+          margin-bottom: 94px;
           display: flex;
           flex-wrap: wrap;
           flex-basis: 334px;
@@ -247,9 +247,10 @@ $bg-c2-orange: #e1b067;
               }
 
               p {
+                width: 334px;
                 @include text($text-light, $text-xl, $text-c2-light);
-                margin-left: 23px;
-                margin-bottom: 13px;
+                padding-left: 23px;
+                padding-bottom: 13px;
               }
               .price {
                 display: flex;
