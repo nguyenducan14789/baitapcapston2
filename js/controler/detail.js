@@ -26,11 +26,13 @@ function renderProductDetail(arrProduct){
 	<p>${arrProduct.description}</p>
 	<h2>Available size</h2>
 	<div class="productSize">		
-    <button class="btn">38</button>
-    <button class="btn">39</button>
-    <button class="btn">40</button>
-    <button class="btn">41</button>
-    <button class="btn">42</button>
+    <button class="btn">${arrProduct.size[0]}</button>
+    <button class="btn">${arrProduct.size[1]}</button>
+    <button class="btn">${arrProduct.size[2]}</button>
+    <button class="btn">${arrProduct.size[3]}</button>
+    <button class="btn">${arrProduct.size[4]}</button>
+    <button class="btn">${arrProduct.size[5]}</button>
+    <button class="btn">${arrProduct.size[6]}</button>
 	</div>
 	<h4>${arrProduct.price}$</h4>
 	<div class="productAmount">
@@ -82,7 +84,7 @@ function renderProduct(arr){
 		  </div>
 		</div>
 	  </div>
-        `  
+        `
     }
     document.querySelector("#row").innerHTML = html;
 }
