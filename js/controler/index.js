@@ -19,24 +19,7 @@ function getDataProducts() {
     })
 }
 
-function getDataProductsId() {
-    let promise = axios({
-        url: 'https://shop.cyberlearn.vn/api/Product',
-        method: 'GET',
-        responseType: 'JSON'
-    });
 
-    //Thành công thì làm ?
-    promise.then(function (result) {
-        console.log('result', result.data.content);
-        //Gọi hàm để từ dữ liệu tạo ra thẻ item
-        renderProduct(result.data.content);
-    });
-    //Thất bại 
-    promise.catch(function (err) {
-        console.log(err)
-    })
-}
 
 window.onload = function () {
     getDataProducts()
@@ -62,7 +45,7 @@ function renderProduct(arr) {
             </div>
             <div class="item-btn">
                 <div class="buy">
-                    <a href="./demo.html?productid=${product.id}">Buy now</a>
+                    <a href="./demo.html?productid=${product.id}" onclick="getDataProductsId(${product.id})">Buy now</a>
                 </div>
                 <div class="price">
                     <p>${product.price}$</p>
