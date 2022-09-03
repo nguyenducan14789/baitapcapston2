@@ -279,6 +279,9 @@ body {
   font-weight: 200;
   color: black;
   line-height: 29.05px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 17px;
 }
 .product .container .product-item .item .item-btn .price {
   width: 100%;
@@ -338,4 +341,111 @@ body {
 }
 .product .container .product-item .item19 {
   margin-left: 99px;
+}
+
+.footer .container {
+  padding: 0 0;
+}
+.footer .container .footer1 {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+.footer .container .footer1 .item h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.footer .container .footer1 .item .info {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .footer1 .item .info a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+.footer .container .footer1 .item .info p {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+.footer .container .footer1 .item1 {
+  width: 520px;
+}
+.footer .container .footer1 .item1 h1 {
+  margin-left: 170px;
+}
+.footer .container .footer1 .item1 .info a {
+  margin-left: 170px;
+}
+.footer .container .footer1 .item2 {
+  width: 295px;
+  padding: 0 10px;
+  border-left: 1px solid #DEDDDC;
+  border-right: 1px solid #DEDDDC;
+}
+.footer .container .footer1 .item3 {
+  width: 304px;
+  padding-left: 10px;
+}
+.footer .container .footer1 .item3 a {
+  color: #d06f6a !important;
+}
+.footer .container .footer1 .item4 {
+  width: 216px;
+}
+.footer .container .footer2 {
+  display: flex;
+  padding: 20px 0;
+  background-color: #ececec;
+}
+.footer .container .footer2 .item h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.footer .container .footer2 .item .info p {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+.footer .container .footer2 .item .info a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #d06f6a;
+  text-decoration: none;
+}
+.footer .container .footer2 .item1 {
+  width: 520px;
+}
+.footer .container .footer2 .item1 h1 {
+  margin-left: 170px;
+}
+.footer .container .footer2 .item1 .info {
+  margin-left: 170px;
+}
+.footer .container .footer2 .item2 {
+  width: 295px;
+  padding: 0 10px;
+  border-left: 1px solid #DEDDDC;
+  border-right: 1px solid #DEDDDC;
+}
+.footer .container .footer2 .item3 {
+  width: 304px;
+  padding-left: 10px;
+}
+.footer .container .footer2 .item4 {
+  width: 216px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .footer2 .item4 i {
+  font-size: 30px;
+  opacity: 0.5;
+  color: black;
 }

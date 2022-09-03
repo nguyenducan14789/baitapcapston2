@@ -1,9 +1,11 @@
 @import'../base/base';
 @import'../help/mixin';
 @import'../help/variable';
-body{
+
+body {
     background-color: $text-c2-light;
 }
+
 .header {
     .container {
         position: relative;
@@ -313,6 +315,9 @@ body{
                             background-color: $text-c1-primary;
                             @include text($text-2x-l, $text-extralight, $text-c1-dark);
                             line-height: 29.05px;
+                            text-decoration: none;
+                            text-align: center;
+                            padding-top: 17px;
                         }
                     }
 
@@ -340,6 +345,7 @@ body{
 
             .item2 {
                 margin: 0 67px;
+
                 .item-info {
                     .name {
                         font-size: $text-2xl  !important;
@@ -408,6 +414,126 @@ body{
 
             .item19 {
                 margin-left: 99px;
+            }
+        }
+    }
+}
+
+.footer {
+    .container {
+        padding: 0 0;
+        .footer1 {
+            padding: 20px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $text-c2-light;
+            // justify-content: space-between;
+            .item {
+                h1 {
+                    @include text($text-base, $text-medium, $bg-c1-dark)
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        text-decoration: none;
+                        @include text($text-m, $text-regular, $bg-c1-dark)
+                    }
+                    p{
+                        @include text($text-m, $text-regular, $bg-c1-dark)
+                    }
+                }
+            }
+
+            .item1 {
+                width: 520px;
+
+                h1 {
+                    margin-left: 170px;
+                }
+
+                .info {
+                    a {
+                        margin-left: 170px;
+                    }
+                }
+            }
+
+            .item2 {
+                width: 295px;
+                padding: 0 10px;
+                border-left: 1px solid $text-c4-light;
+                border-right: 1px solid $text-c4-light;
+            }
+
+            .item3 {
+                width: 304px;
+                padding-left: 10px;
+                a{
+                    color: $text-c1-danger !important;
+                }
+            }
+            .item4{
+                width: 216px;
+            }
+        }
+
+        .footer2 {
+            display: flex;
+            padding: 20px 0;
+            background-color: $text-c5-light;
+            .item {
+                h1 {
+                    @include text($text-base, $text-medium, $bg-c1-dark)
+                }
+
+                .info {
+                    p {
+                        @include text($text-m, $text-regular, $bg-c1-dark)
+                    }
+
+                    a {
+                        @include text($text-m, $text-regular, $text-c1-danger);
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .item1 {
+                width: 520px;
+                h1{
+                    margin-left: 170px;
+                }
+                .info{
+                    margin-left: 170px;
+                }
+            }
+
+            .item2 {
+                width: 295px;
+                padding: 0 10px;
+                border-left: 1px solid $text-c4-light;
+                border-right: 1px solid $text-c4-light;
+            }
+
+            .item3 {
+                width: 304px;
+                padding-left: 10px;
+            }
+
+            .item4 {
+                width: 216px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 30px;
+                    opacity: 0.5;
+                    color: $text-c1-dark;
+                }
             }
         }
     }
