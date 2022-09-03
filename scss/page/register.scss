@@ -77,6 +77,42 @@ body {
     }
 }
 
+.sub{
+    .container{
+        h1{
+            @include text($text-4xl, $text-regular, $text-c1-dark);
+            line-height: 48.41px;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .content1{
+                margin-bottom: 20px;
+                .cs-input{
+                    
+                    ::placeholder{
+                        @include text($text-3xl, $text-regular, $text-c1-warning);
+                        line-height: 36.21px;
+                        
+                    }
+                }
+            }    
+            .content2{
+                margin-bottom: 20px;
+            }
+            .content3{
+                margin-bottom: 20px;
+                // display: flex;
+                // justify-content: space-between;
+
+            }
+        }
+    }
+}
 
 
 .footer {

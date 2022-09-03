@@ -47,7 +47,29 @@
     <!-- sub -->
     <section class="sub">
         <div class="container">
-            
+            <h1>Register</h1>
+            <div class="content">
+                <div class="content1">
+                    <input class="cs-input" id="email" type="text" placeholder="email">
+                    <input id="name" type="text" placeholder="name">
+                </div>
+                
+                <div class="content2">
+                    <input id="password" type="password" placeholder="password">
+                    <input type="text" id="phone" placeholder="phone">
+                </div>
+                
+                <div class="content3">
+                    <input type="password" placeholder="password confirm">
+                    <span>Gender</span>
+                    <input type="radio" id="gender" name="gender" value="true" checked> Male
+                    <input type="radio" id="gender1" name="gender" value="false"> Female
+                </div>
+                
+                <div class="sub-btn">
+                    <button id="submit" >Submit</button>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End sub -->
@@ -135,6 +157,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/model/product.js"></script>
 
     <script src="./js/controler/register.js"></script>
 </body>

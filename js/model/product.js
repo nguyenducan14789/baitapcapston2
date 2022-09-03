@@ -14,3 +14,13 @@ function Product(){
     this.image = "";
 }
 console.log("aaa")
+
+
+function Member(){
+    this.email = "";
+    this.name = "";
+    this.password = "";
+    this.phone = "";
+    this.gender = "";
+
+}

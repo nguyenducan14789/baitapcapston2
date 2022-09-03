@@ -84,6 +84,47 @@ body {
   color: #ffffff;
 }
 
+.sub .container h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+  line-height: 48.41px;
+  text-align: center;
+  padding-top: 30px;
+}
+.sub .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub .container .content .content1 {
+  margin-bottom: 20px;
+}
+.sub .container .content .content1 .cs-input ::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffb900;
+  line-height: 36.21px;
+}
+.sub .container .content .content1 .cs-input :-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffb900;
+  line-height: 36.21px;
+}
+.sub .container .content .content1 .cs-input ::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffb900;
+  line-height: 36.21px;
+}
+.sub .container .content .content2 {
+  margin-bottom: 20px;
+}
+.sub .container .content .content3 {
+  margin-bottom: 20px;
+}
+
 .footer .container {
   padding: 0 0;
 }
