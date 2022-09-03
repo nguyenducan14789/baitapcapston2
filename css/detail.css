@@ -181,7 +181,7 @@
   margin: 0;
   padding-top: 16px;
   padding-bottom: 106px;
-  margin-left: 75px;
+  padding-left: 75px;
 }
 .product .container h1 {
   font-weight: 400;
@@ -194,7 +194,7 @@
   padding: 0;
   margin: 0;
   border: none;
-  margin-right: 60px;
+  margin-right: 45px;
   margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
