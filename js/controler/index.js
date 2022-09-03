@@ -45,7 +45,7 @@ function renderProduct(arr) {
             </div>
             <div class="item-btn">
                 <div class="buy">
-                    <a href="./demo.html?productid=${product.id}" onclick="getDataProductsId(${product.id})">Buy now</a>
+                    <a href="../../detail.html?productid=${product.id}" onclick="getDataProductsId(${product.id})">Buy now</a>
                 </div>
                 <div class="price">
                     <p>${product.price}$</p>
