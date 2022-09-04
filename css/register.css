@@ -100,18 +100,6 @@ body {
 .sub .container .content .content1 {
   margin-bottom: 20px;
 }
-.sub .container .content .content1 .cs-input ::-moz-placeholder {
-  font-size: 30px;
-  font-weight: 400;
-  color: #ffb900;
-  line-height: 36.21px;
-}
-.sub .container .content .content1 .cs-input :-ms-input-placeholder {
-  font-size: 30px;
-  font-weight: 400;
-  color: #ffb900;
-  line-height: 36.21px;
-}
 .sub .container .content .content1 .cs-input ::placeholder {
   font-size: 30px;
   font-weight: 400;

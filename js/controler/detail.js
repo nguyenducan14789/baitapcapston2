@@ -78,7 +78,7 @@ function renderProduct(arr){
 			<h2>${product.name}</h2>
 			<p>${product.shortDescription}</p>
 			<div class="price">
-			  <a href="../../detail.html?id=${product.id} class="btn">Buy now</a>
+			  <a href="../../detail.html?productid=${product.id}"class="btn">Buy now</a>
 			  <p>${product.price}$</p>
 			</div>
 		  </div>

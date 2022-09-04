@@ -231,12 +231,11 @@
 }
 .product .container .items .row .col .card .cardBody .price {
   display: flex;
-  vertical-align: middle;
   text-align: center;
+  height: 64px;
 }
 .product .container .items .row .col .card .cardBody .price a {
-  width: 175px;
-  height: 64px;
+  width: 55%;
   font-weight: 200;
   font-size: 24px;
   color: #000000;
@@ -247,8 +246,7 @@
   text-decoration: none;
 }
 .product .container .items .row .col .card .cardBody .price p {
-  width: 160px;
-  height: 64px;
+  width: 45%;
   font-weight: 600;
   font-size: 24px;
   color: #000000;
@@ -257,7 +255,89 @@
   background: #dedddc;
 }
 
-.footer img {
-  display: block;
+.footerUp {
+  padding-left: 140px;
   width: 100%;
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background: #f8f8f8;
+}
+.footerUp .item1 {
+  border-right: 4px solid rgba(187, 187, 187, 0.973);
+}
+.footerUp .item2 {
+  border-right: 4px solid rgba(187, 187, 187, 0.973);
+}
+.footerUp .item {
+  flex: 33.3333333333%;
+  padding-left: 10px;
+  padding-right: 70px;
+}
+.footerUp .item h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+.footerUp .item .info p {
+  margin: 0;
+}
+.footerUp .item .info a {
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.footerUp .item .info .more {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fc0303;
+}
+
+.footerDown {
+  padding-left: 140px;
+  width: 100%;
+  display: flex;
+  background: #dedddc;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  position: relative;
+}
+.footerDown i {
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+.footerDown .item1 {
+  border-right: 4px solid rgba(187, 187, 187, 0.973);
+}
+.footerDown .item2 {
+  border-right: 4px solid rgba(187, 187, 187, 0.973);
+}
+.footerDown .item {
+  flex: 33.3333333333%;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+.footerDown .item h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+.footerDown .item .info p {
+  margin: 0;
+}
+.footerDown .item .info a {
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.footerDown .item .info .more {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fc0303;
 }

@@ -254,11 +254,10 @@ $bg-c2-orange: #e1b067;
               }
               .price {
                 display: flex;
-                vertical-align: middle;
                 text-align: center;
+                height: 64px;
                 a {
-                  width: 175px;
-                  height: 64px;
+                  width: 55%;
                   @include text($text-exlight, $text-24xl, $text-c1-dark);
                   background-color: $bg-c2-orange;
                   border-radius: 0px;
@@ -267,8 +266,7 @@ $bg-c2-orange: #e1b067;
                   text-decoration: none;
                 }
                 p {
-                  width: 160px;
-                  height: 64px;
+                  width: 45%;
                   @include text($text-semibold, $text-24xl, $text-c1-dark);
                   margin: 0;
                   line-height: 64px;
@@ -283,9 +281,82 @@ $bg-c2-orange: #e1b067;
   }
 }
 
-.footer{
-  img{
-  display: block;
-  width: 100%;
+  .footerUp {
+    padding-left: 140px;
+    width: 100%;
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background: $bg-c2-light;
+    .item1{
+      border-right: 4px solid rgba(187, 187, 187, 0.973);
+    }
+    .item2{
+      border-right: 4px solid rgba(187, 187, 187, 0.973);
+    }
+    .item {
+      flex: calc(100% / 3);
+      padding-left: 10px;
+      padding-right: 70px;
+      h1 {
+        @include text($text-semibold, $text-2xl, $text-c1-dark);
+      }
+      .info {
+        p {
+          margin: 0;
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+          @include text($text-regular, $text-base, $text-c1-dark);
+        }
+        .more{
+          @include text($text-light, 14px, $text-c1-red);
+        }
+      }
+    }
   }
-}
+  .footerDown {
+    padding-left: 140px;
+    width:100%;
+    display: flex;
+    background: $bg-c3-light;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    position: relative;
+    i{
+      font-size: 30px;
+      position: absolute;
+      top: 50px;
+      right: 30px;
+    }
+    .item1{
+      border-right: 4px solid rgba(187, 187, 187, 0.973);
+    }
+    .item2{
+      border-right: 4px solid rgba(187, 187, 187, 0.973);
+    }
+    .item {
+      flex: calc(100% / 3);
+      padding-left: 10px;
+      padding-right: 40px;
+      h1 {
+        @include text($text-semibold, $text-2xl, $text-c1-dark);
+      }
+      .info {
+        p {
+          margin: 0;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          @include text($text-regular, $text-base, $text-c1-dark);
+        }
+        .more{
+          @include text($text-light, 14px, $text-c1-red);
+        }
+      }
+    }
+  }
+
