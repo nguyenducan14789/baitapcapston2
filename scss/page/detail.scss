@@ -325,11 +325,15 @@ $bg-c2-orange: #e1b067;
     padding-bottom: 40px;
     padding-top: 20px;
     position: relative;
-    i{
-      font-size: 30px;
-      position: absolute;
-      top: 50px;
-      right: 30px;
+    a{
+      text-decoration: none;
+      i{
+        color: rgba(187, 187, 187, 0.973);
+        font-size: 30px;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+      }
     }
     .item1{
       border-right: 4px solid rgba(187, 187, 187, 0.973);

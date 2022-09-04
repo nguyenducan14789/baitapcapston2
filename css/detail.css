@@ -304,7 +304,11 @@
   padding-top: 20px;
   position: relative;
 }
-.footerDown i {
+.footerDown a {
+  text-decoration: none;
+}
+.footerDown a i {
+  color: rgba(187, 187, 187, 0.973);
   font-size: 30px;
   position: absolute;
   top: 50px;
