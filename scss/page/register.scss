@@ -95,6 +95,7 @@ body {
                 .cs-input{
                     
                     ::placeholder{
+                        color: aqua;
                         @include text($text-3xl, $text-regular, $text-c1-warning);
                         line-height: 36.21px;
                         
