@@ -3,7 +3,7 @@
 @import'../help/variable';
 
 body {
-    background-color: $text-c2-light;
+    background-color: white;
 }
 
 .header {
@@ -77,10 +77,75 @@ body {
     }
 }
 
-.sub {
+.menu {
+    
+    
     .container {
-        padding: 0 0;
+        position: relative;
+        height: 50px;
+        width: 100%;
+        // background-color: white !important;
+        hr {
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            left: 24px;
+            top: 30px;
+            color: $text-c1-dark;
+            z-index: 8;
 
+        }
+
+        a {
+            // height: 24px;
+            text-decoration: none;
+            @include text($text-2xl, $text-light, $text-c1-dark )
+        }
+
+        .menu-a1 {
+            position: absolute;
+            width: 56px;
+            left: 25px;
+            top: 16px;
+        }
+
+        .menu-a2 {
+            position: absolute;
+            width: 41px;
+            left: 105px;
+            top: 16px;
+            opacity: 70%;
+        }
+
+        .menu-a3 {
+            position: absolute;
+            width: 70px;
+            left: 183px;
+            top: 16px;
+            opacity: 70%;
+        }
+
+        .menu-a4 {
+            position: absolute;
+            width: 31px;
+            left: 292px;
+            top: 16px;
+        }
+
+        .menu-a5 {
+            position: absolute;
+            width: 52px;
+            left: 363px;
+            top: 16px;
+        }
+    }
+}
+
+.sub {
+    // padding-bottom: 40px;
+    .container {
+        padding: 0 0 40px 0;
+        position: relative;
         h1 {
             @include text($text-4xl, $text-regular, $text-c1-dark);
             line-height: 48.41px;
@@ -113,6 +178,7 @@ body {
                         @include text ($text-3xl, $text-regular, $text-c1-dark);
                         &::placeholder {
                             @include text ($text-3xl, $text-regular, $text-c1-dark);
+                            background: $bg-c3-light;
                         }
                         &:focus{
                             outline: none;
@@ -136,7 +202,7 @@ body {
                         height: 36px;
                         @include text ($text-3xl, $text-regular, $text-c1-dark);
                         &::placeholder {
-
+                            background: $bg-c3-light;
                             @include text ($text-3xl, $text-regular, $text-c1-dark);
                         }
                         &:focus{
@@ -163,7 +229,7 @@ body {
                         height: 36px;
                         @include text ($text-3xl, $text-regular, $text-c1-dark);
                         &::placeholder {
-
+                            background: $bg-c3-light;
                             @include text ($text-3xl, $text-regular, $text-c1-dark);
                         }
                         &:focus{
@@ -184,14 +250,19 @@ body {
                         width: 65.42px ;
                         height: 50px ;
                         background-color: $text-c1-purple;
+                        accent-color: $bg-c3-violet;
                     }
                 }
 
-                // display: flex;
-                // justify-content: space-between;
-
             }
 
+            .sub-btn{
+                button{
+                    // position: absolute;
+                    margin-left: 720px;
+                    @include btn($text-3xl, $text-regular, $text-c1-light, $bg-c3-violet, 6px 98.94px 12px 87.3px,1px solid $text-c1-purple, 0, $text-c1-purple, $text-c1-light);
+                }
+            }
             // .cs-input1 {
 
 

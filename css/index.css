@@ -9,14 +9,14 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: white;
+  background: #F5F5F5;
 }
 
 /*
     background: color
 */
 body {
-  background-color: #F6F6F6;
+  background: white;
 }
 
 .header .container {
@@ -84,20 +84,20 @@ body {
   color: #ffffff;
 }
 
-.menu {
-  height: 50px;
-}
 .menu .container {
   position: relative;
+  height: 50px;
   width: 100%;
+  background-color: #F5F5F5;
 }
 .menu .container hr {
   position: absolute;
   width: 60px;
   height: 2px;
   left: 24px;
-  top: 40px;
+  top: 30px;
   color: black;
+  z-index: 8;
 }
 .menu .container a {
   text-decoration: none;

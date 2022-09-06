@@ -9,14 +9,14 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: white;
+  background: #F5F5F5;
 }
 
 /*
     background: color
 */
 body {
-  background-color: #F6F6F6;
+  background-color: white;
 }
 
 .header .container {
@@ -84,8 +84,62 @@ body {
   color: #ffffff;
 }
 
+.menu .container {
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+.menu .container hr {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  left: 24px;
+  top: 30px;
+  color: black;
+  z-index: 8;
+}
+.menu .container a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+.menu .container .menu-a1 {
+  position: absolute;
+  width: 56px;
+  left: 25px;
+  top: 16px;
+}
+.menu .container .menu-a2 {
+  position: absolute;
+  width: 41px;
+  left: 105px;
+  top: 16px;
+  opacity: 70%;
+}
+.menu .container .menu-a3 {
+  position: absolute;
+  width: 70px;
+  left: 183px;
+  top: 16px;
+  opacity: 70%;
+}
+.menu .container .menu-a4 {
+  position: absolute;
+  width: 31px;
+  left: 292px;
+  top: 16px;
+}
+.menu .container .menu-a5 {
+  position: absolute;
+  width: 52px;
+  left: 363px;
+  top: 16px;
+}
+
 .sub .container {
-  padding: 0 0;
+  padding: 0 0 40px 0;
+  position: relative;
 }
 .sub .container h1 {
   font-size: 40px;
@@ -121,16 +175,19 @@ body {
   font-size: 30px;
   font-weight: 400;
   color: black;
+  background: #F5F5F5;
 }
 .sub .container .content .content1 .help input:-ms-input-placeholder {
   font-size: 30px;
   font-weight: 400;
   color: black;
+  background: #F5F5F5;
 }
 .sub .container .content .content1 .help input::placeholder {
   font-size: 30px;
   font-weight: 400;
   color: black;
+  background: #F5F5F5;
 }
 .sub .container .content .content1 .help input:focus {
   outline: none;
@@ -154,16 +211,19 @@ body {
   color: black;
 }
 .sub .container .content .content2 .help input::-moz-placeholder {
+  background: #F5F5F5;
   font-size: 30px;
   font-weight: 400;
   color: black;
 }
 .sub .container .content .content2 .help input:-ms-input-placeholder {
+  background: #F5F5F5;
   font-size: 30px;
   font-weight: 400;
   color: black;
 }
 .sub .container .content .content2 .help input::placeholder {
+  background: #F5F5F5;
   font-size: 30px;
   font-weight: 400;
   color: black;
@@ -191,16 +251,19 @@ body {
   color: black;
 }
 .sub .container .content .content3 .help input::-moz-placeholder {
+  background: #F5F5F5;
   font-size: 30px;
   font-weight: 400;
   color: black;
 }
 .sub .container .content .content3 .help input:-ms-input-placeholder {
+  background: #F5F5F5;
   font-size: 30px;
   font-weight: 400;
   color: black;
 }
 .sub .container .content .content3 .help input::placeholder {
+  background: #F5F5F5;
   font-size: 30px;
   font-weight: 400;
   color: black;
@@ -223,6 +286,22 @@ body {
   width: 65.42px;
   height: 50px;
   background-color: #AE18E2;
+  accent-color: #AE18E2;
+}
+.sub .container .content .sub-btn button {
+  margin-left: 720px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  background: #AE18E2;
+  padding: 6px 98.94px 12px 87.3px;
+  border: 1px solid #AE18E2;
+  border-radius: 0;
+  cursor: pointer;
+}
+.sub .container .content .sub-btn button:hover {
+  color: #AE18E2;
+  background: #ffffff;
 }
 
 .footer .container {

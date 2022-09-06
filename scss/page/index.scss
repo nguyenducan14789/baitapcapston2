@@ -3,7 +3,7 @@
 @import'../help/variable';
 
 body {
-    background-color: $text-c2-light;
+    background: white;
 }
 
 .header {
@@ -79,19 +79,19 @@ body {
 
 
 .menu {
-    height: 50px;
-
     .container {
         position: relative;
+        height: 50px;
         width: 100%;
-
+        background-color: #F5F5F5;
         hr {
             position: absolute;
             width: 60px;
             height: 2px;
             left: 24px;
-            top: 40px;
+            top: 30px;
             color: $text-c1-dark;
+            z-index: 8;
 
         }
 
