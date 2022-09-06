@@ -84,6 +84,9 @@ body {
   color: #ffffff;
 }
 
+.sub .container {
+  padding: 0 0;
+}
 .sub .container h1 {
   font-size: 40px;
   font-weight: 400;
@@ -95,22 +98,131 @@ body {
 .sub .container .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .sub .container .content .content1 {
+  display: flex;
   margin-bottom: 20px;
+  height: 51px;
 }
-.sub .container .content .content1 .cs-input ::placeholder {
+.sub .container .content .content1 .help {
+  margin: 0 0px 0 120px;
+  width: 482px;
+  border-bottom: 4px solid #AE18E2;
+}
+.sub .container .content .content1 .help input {
+  border: none;
+  width: 346px;
+  height: 36px;
   font-size: 30px;
   font-weight: 400;
-  color: #ffb900;
-  line-height: 36.21px;
+  color: black;
+}
+.sub .container .content .content1 .help input::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content1 .help input:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content1 .help input::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content1 .help input:focus {
+  outline: none;
 }
 .sub .container .content .content2 {
+  display: flex;
   margin-bottom: 20px;
+  height: 51px;
+}
+.sub .container .content .content2 .help {
+  margin: 0 0px 0 120px;
+  width: 482px;
+  border-bottom: 4px solid #AE18E2;
+}
+.sub .container .content .content2 .help input {
+  border: none;
+  width: 346px;
+  height: 36px;
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content2 .help input::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content2 .help input:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content2 .help input::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content2 .help input:focus {
+  outline: none;
 }
 .sub .container .content .content3 {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+  height: 51px;
+}
+.sub .container .content .content3 .help {
+  margin: 0 120px 0 120px;
+  width: 482px;
+  border-bottom: 4px solid #AE18E2;
+}
+.sub .container .content .content3 .help input {
+  width: 346px;
+  border: none;
+  height: 36px;
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content3 .help input::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content3 .help input:-ms-input-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content3 .help input::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sub .container .content .content3 .help input:focus {
+  outline: none;
+}
+.sub .container .content .content3 .ct3-radio span {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  line-height: 36.31px;
+}
+.sub .container .content .content3 .ct3-radio input {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  line-height: 36.31px;
+  margin: 0 15px !important;
+  width: 65.42px;
+  height: 50px;
+  background-color: #AE18E2;
 }
 
 .footer .container {

@@ -77,40 +77,128 @@ body {
     }
 }
 
-.sub{
-    .container{
-        h1{
+.sub {
+    .container {
+        padding: 0 0;
+
+        h1 {
             @include text($text-4xl, $text-regular, $text-c1-dark);
             line-height: 48.41px;
             text-align: center;
             padding-top: 30px;
         }
-        .content{
+
+        .content {
+
             display: flex;
             flex-direction: column;
-            align-items: center;
-            
-            .content1{
+            // align-items: center;
+
+
+
+
+            .content1 {
+                display: flex;
                 margin-bottom: 20px;
-                .cs-input{
-                    
-                    ::placeholder{
-                        color: aqua;
-                        @include text($text-3xl, $text-regular, $text-c1-warning);
-                        line-height: 36.21px;
-                        
+                height: 51px;
+
+                .help {
+                    margin: 0 0px 0 120px;
+                    width: 482px;
+                    border-bottom: 4px solid $text-c1-purple;
+                    input {
+                        border: none;
+                        width: 346px;
+                        height: 36px;
+                        @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        &::placeholder {
+                            @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        }
+                        &:focus{
+                            outline: none;
+                        }
                     }
                 }
-            }    
-            .content2{
-                margin-bottom: 20px;
             }
-            .content3{
+
+            .content2 {
+                display: flex;
                 margin-bottom: 20px;
+                height: 51px;
+
+                .help {
+                    margin: 0 0px 0 120px;
+                    width: 482px;
+                    border-bottom: 4px solid $text-c1-purple;
+                    input {
+                        border: none;
+                        width: 346px;
+                        height: 36px;
+                        @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        &::placeholder {
+
+                            @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .content3 {
+                display: flex;
+                align-items: center;
+                
+                margin-bottom: 20px;
+                height: 51px;
+
+                .help {
+                    margin: 0 120px 0 120px;
+                    width: 482px;
+                    border-bottom: 4px solid $text-c1-purple;
+                    input {
+                        width: 346px;
+                        border: none;
+                        height: 36px;
+                        @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        &::placeholder {
+
+                            @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+
+                .ct3-radio {
+                    span{
+                        @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        line-height: 36.31px;
+                    }
+                    input {
+                        @include text ($text-3xl, $text-regular, $text-c1-dark);
+                        line-height: 36.31px;
+                        margin: 0 15px !important;
+                        width: 65.42px ;
+                        height: 50px ;
+                        background-color: $text-c1-purple;
+                    }
+                }
+
                 // display: flex;
                 // justify-content: space-between;
 
             }
+
+            // .cs-input1 {
+
+
+            //     // margin-left: 120px !important;
+            //     border: none;
+
+            // }
         }
     }
 }
@@ -119,12 +207,14 @@ body {
 .footer {
     .container {
         padding: 0 0;
+
         .footer1 {
             padding: 20px 0;
             width: 100%;
             display: flex;
             justify-content: center;
             background-color: $text-c2-light;
+
             // justify-content: space-between;
             .item {
                 h1 {
@@ -139,7 +229,8 @@ body {
                         text-decoration: none;
                         @include text($text-m, $text-regular, $bg-c1-dark)
                     }
-                    p{
+
+                    p {
                         @include text($text-m, $text-regular, $bg-c1-dark)
                     }
                 }
@@ -169,11 +260,13 @@ body {
             .item3 {
                 width: 304px;
                 padding-left: 10px;
-                a{
-                    color: $text-c1-danger !important;
+
+                a {
+                    color: $text-c1-danger  !important;
                 }
             }
-            .item4{
+
+            .item4 {
                 width: 216px;
             }
         }
@@ -182,6 +275,7 @@ body {
             display: flex;
             padding: 20px 0;
             background-color: $text-c5-light;
+
             .item {
                 h1 {
                     @include text($text-base, $text-medium, $bg-c1-dark)
@@ -201,10 +295,12 @@ body {
 
             .item1 {
                 width: 520px;
-                h1{
+
+                h1 {
                     margin-left: 170px;
                 }
-                .info{
+
+                .info {
                     margin-left: 170px;
                 }
             }
@@ -226,7 +322,8 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                i{
+
+                i {
                     font-size: 30px;
                     opacity: 0.5;
                     color: $text-c1-dark;

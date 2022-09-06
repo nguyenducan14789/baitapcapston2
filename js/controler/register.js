@@ -1,4 +1,16 @@
 console.log("aaa")
+let check = function() {
+    if (document.getElementById('password').value ==
+        document.getElementById('confirm').value) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = 'hợp lệ';
+        return true
+    } else {
+        document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'không phù hợp';
+        return false;
+    }
+}
 
 document.querySelector("#submit").onclick = () => {
     // debugger
@@ -19,21 +31,28 @@ document.querySelector("#submit").onclick = () => {
 
     console.log("member", member)
     console.log("bbb")
+    let valid = check();
 
-
-    var promise = axios({
-        url:'https://shop.cyberlearn.vn/api/Users/signup',
-        method:'POST',
-        responseType: 'JSON',
-        data: member // dữ liệu gửi về server có format do backend quy định
-    })
-
-    promise.then(function(result){
-        console.log("seult", result)
-        // getDataSVApi()
-    })
-
-    promise.catch(function(error){
-        console.log("error", error)
-    })
+    if(valid == true){
+        let promise = axios({
+            url:'https://shop.cyberlearn.vn/api/Users/signup',
+            method:'POST',
+            responseType: 'JSON',
+            data: member // dữ liệu gửi về server có format do backend quy định
+        })
+    
+        promise.then(function(result){
+            console.log("seult", result)
+            
+        })
+    
+        promise.catch(function(error){
+            console.log("error", error)
+        }) 
+    } else{
+        return;
+    }
+    
+    
 }
+

@@ -30,9 +30,9 @@
                     <img src="./img/image 3.png" alt="">
                 </a>
                 <a href="#" class="log">Login</a>
-                <a href="#" class="reg">Register</a>
+                <a href="./register.html" class="reg">Register</a>
             </div>
-            <a href="" class="com">
+            <a href="./detail.html" class="com">
                 <img src="./img/image 8.png" alt="">
                 <span>(1)</span>
             </a>
@@ -50,20 +50,36 @@
             <h1>Register</h1>
             <div class="content">
                 <div class="content1">
-                    <input class="cs-input" id="email" type="text" placeholder="email">
-                    <input id="name" type="text" placeholder="name">
+                    <div class="help"><input class="cs-input cs-input1" id="email" type="text" placeholder="email"></div>
+                    
+                    <div class="help">
+                        <input id="name" class="cs-input" type="text" placeholder="name">
+                    </div>
+                    
                 </div>
                 
                 <div class="content2">
-                    <input id="password" type="password" placeholder="password">
-                    <input type="text" id="phone" placeholder="phone">
+                    <div class="help">
+                        <input id="password" class="cs-input cs-input1" type="password" placeholder="password" onkeyup='check();'>
+                    </div>
+                    
+                    <div class="help">
+                        <input type="text" class="cs-input" id="phone" placeholder="phone">
+                    </div>
+                    
                 </div>
                 
                 <div class="content3">
-                    <input type="password" placeholder="password confirm">
-                    <span>Gender</span>
-                    <input type="radio" id="gender" name="gender" value="true" checked> Male
-                    <input type="radio" id="gender1" name="gender" value="false"> Female
+                    <div class="help">
+                        <input type="password" class="cs-input cs-input1"  id="confirm" placeholder="password confirm" onkeyup='check();'>
+                        <span id="message"></span>
+                    </div>
+                    <div class="ct3-radio">
+                        <span>Gender</span>
+                        <input type="radio" id="gender" name="gender" value="true" checked> <span>Male</span>
+                        <input type="radio" id="gender1" name="gender" value="false">
+                        <span>Female</span>
+                    </div>
                 </div>
                 
                 <div class="sub-btn">
