@@ -191,6 +191,7 @@ body {
 }
 .sub .container .content .content1 .help input:focus {
   outline: none;
+  background: #F5F5F5;
 }
 .sub .container .content .content2 {
   display: flex;
@@ -230,6 +231,7 @@ body {
 }
 .sub .container .content .content2 .help input:focus {
   outline: none;
+  background: #F5F5F5;
 }
 .sub .container .content .content3 {
   display: flex;
@@ -270,6 +272,7 @@ body {
 }
 .sub .container .content .content3 .help input:focus {
   outline: none;
+  background: #F5F5F5;
 }
 .sub .container .content .content3 .ct3-radio span {
   font-size: 30px;
